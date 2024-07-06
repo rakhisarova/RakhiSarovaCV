@@ -1,0 +1,203 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #d8e2dc, #ffe5d9, #ffcad4, #f4acb7, navy);
+    color: #333;
+}
+
+header, footer, section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+a { 
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skills, .software {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.skill, .tool {
+    padding: 8px 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover, .tool:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill::before, .tool::before {
+    content: "✔";
+    margin-right: 8px;
+    color: #007BFF;
+}
+
+#summary p {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.profile-image:hover {
+    transform: rotateY(360deg);
+}
+
+.background-section {
+    background: url('D:/wo.png');
+    background-size: contain;
+    background-position: left;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    transition: background 0.5s;
+}
+
+.background-section:hover {
+    background: linear-gradient(to right, black, #f0f0f0);
+}
+
+#skills-software {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.column h2 {
+    background: lightcoral;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.skill, .tool {
+    background: antiquewhite;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.skill:hover, .tool:hover {
+    transform: scale(1.1);
+    background-color: lightcoral;
+    color: white;
+}
+
+.skill::before, .tool::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 5px;
+    transition: background 0.3s;
+}
+
+.skill:hover::before, .tool:hover::before {
+    background: lightcoral;
+}
+
+/* Custom bullet points for list items */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "★"; /* Change this to any symbol or emoji */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: lightcoral; /* Customize the color */
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+ul li:hover::before {
+    transform: rotate(360deg);
+}
+
+ul li:nth-child(odd)::before {
+    content: "◆"; /* Different shape for odd items */
+    color: #007BFF;
+}
+
+ul li:nth-child(even)::before {
+    content: "★"; /* Different shape for even items */
+    color: #ff6347;
+}
+.highlight {
+    color: lightcoral; /* Change this color to your preference */
+    font-weight: bold;
+}
